@@ -17,5 +17,6 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
 - Laravel 5.1
 - Node.js
 - npm
+- gulp
 - Bower
 - AngularJS 1.4
