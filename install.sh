@@ -13,10 +13,10 @@ sudo sh -c 'echo "deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu trusty m
 sudo apt-get update
 
 # INSTALL Node.js node - recess - gulp - bower
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 sudo npm install -g recess
-npm install -g gulp
-npm install -g bower
+sudo npm install -g gulp
+sudo npm install -g bower
  
 
 
