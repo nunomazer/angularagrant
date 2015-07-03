@@ -6,22 +6,27 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
 
 # Environment
 
+- Apache2: 2.4.x
+  - modrewrite
+  - servername: devvm
+- Git
 - Node.js
   - chris-lea/node.js ppa for Ubuntu trusty
   - npm
   - gulp
   - Bower
   - recess
+- PHP 5.5.9
+  - mcrypt (php5-mcrypt)
+  - intl (php5-intl)
+  - PDO sqlite (php5-sqlite)
+  - PDO dblib (php5-sybase / freetds)
+  - PDO mysql (php5-mysql)
+  - PDO pgsql (php5-pgsql)
+  - xdebug (php5-xdebug)
 
 **WORK IN PROGRESS**
 
-- Apache2 2.4.x
-  - modrewrite
-- Git
-- PHP 5.6.x
-  - mcrypt (php5-mcrypt)
-  - intl (php5-intl)
-  - sqlite (php5-sqlite)
 - Composer
 - Laravel 5.1
 - AngularJS 1.4
