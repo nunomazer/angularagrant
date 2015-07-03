@@ -21,8 +21,8 @@ sudo npm install -g bower
 # INSTALL GIT
 sudo apt-get install -y git
 
-# APACHE - PHP5 with mcrypt, intl, xdebug, libapache2, PDO: mysql, sybase
-sudo apt-get install -y apache2 php5 php5-cli php5-mcrypt php5-intl php5-xdebug libapache2-mod-auth-mysql php5-mysql php5-sybase php5-sqlite php5-pgsql
+# APACHE - PHP5 with cli, mcrypt, intl, xdebug, libapache2, gd, imagick, PDO: mysql, sybase, sqlite, pgsql
+sudo apt-get install -y apache2 php5 php5-cli php5-mcrypt php5-intl php5-xdebug libapache2-mod-auth-mysql php5-mysql php5-sybase php5-sqlite php5-pgsql php5-gd php5-imagick
 
 # APACHE configs
 # servername
