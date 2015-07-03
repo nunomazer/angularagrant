@@ -46,4 +46,10 @@ sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/cli/php.ini
 # Set Sybase freetds.conf protocol
 sudo sed -i 's/# TDS protocol version/# TDS protocol version \n        tds version = 5.0 \n /' /etc/freetds/freetds.conf 
 
+# INSTALL COMPOSER
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+# self-update every week
+crontab -l | { cat; echo "0 0 */7 * * composer self-update"; } | crontab -
+
 sudo service apache2 restart

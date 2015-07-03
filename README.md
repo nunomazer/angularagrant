@@ -9,6 +9,8 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
 - Apache2: 2.4.x
   - modrewrite
   - servername: devvm
+- Composer
+  - self-update every week
 - Git
 - Node.js
   - chris-lea/node.js ppa for Ubuntu trusty
@@ -29,6 +31,5 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
 
 **WORK IN PROGRESS**
 
-- Composer
 - Laravel 5.1
 - AngularJS 1.4
