@@ -24,12 +24,14 @@ sudo apt-get install -y git
 # APACHE - PHP5 with mcrypt, intl, xdebug, libapache2, PDO: mysql, sybase
 sudo apt-get install -y apache2 php5 php5-cli php5-mcrypt php5-intl php5-xdebug libapache2-mod-auth-mysql php5-mysql php5-sybase php5-sqlite php5-pgsql
 
-# APACHE servername
+# APACHE configs
+# servername
 echo "ServerName devvm" | sudo tee /etc/apache2/conf-available/fqdn.conf
 sudo a2enconf fqdn
-
-# APACHE mod rewrite
+# mod rewrite
 sudo a2enmod rewrite
+# Add vagrant user to www-data group
+sudo usermod -a -G www-data vagrant
 
 # PHP 5 mod mcrypt
 sudo php5enmod mcrypt
