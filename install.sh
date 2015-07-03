@@ -40,6 +40,8 @@ sudo php5enmod intl
 # error_reporting
 sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/cli/php.ini
 sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini
+sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini 
+sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/cli/php.ini
 
 # Set Sybase freetds.conf protocol
 sudo sed -i 's/# TDS protocol version/# TDS protocol version \n        tds version = 5.0 \n /' /etc/freetds/freetds.conf 
