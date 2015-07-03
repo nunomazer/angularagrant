@@ -17,6 +17,7 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
   - Bower
   - recess
 - PHP 5.5.9
+  - cli (pgp5-cli)
   - mcrypt (php5-mcrypt)
   - intl (php5-intl)
   - PDO sqlite (php5-sqlite)
@@ -24,6 +25,7 @@ Bash shell provisioner for Vagrant box to install Larabas-AngularJS development 
   - PDO mysql (php5-mysql)
   - PDO pgsql (php5-pgsql)
   - xdebug (php5-xdebug)
+  - gd, imagick (php5-gd, php5-imagick)
 
 **WORK IN PROGRESS**
 
