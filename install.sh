@@ -32,6 +32,9 @@ sudo a2enconf fqdn
 sudo a2enmod rewrite
 # Add vagrant user to www-data group
 sudo usermod -a -G www-data vagrant
+# Change localhost dir
+sudo sed -i 's#DocumentRoot /var/www/html#DocumentRoot /vagrant/workspaces \n     <Directory /vagrant/workspaces> \n          Options +Indexes +FollowSymLinks +MultiViews \n          AllowOverride All \n          Require all granted \n          Order allow,deny \n          allow from all \n     </Directory>#' /etc/apache2/sites-available/000-default.conf
+sudo sed -i 's#DocumentRoot /var/www/html#DocumentRoot /vagrant/workspaces \n     <Directory /vagrant/workspaces> \n          Options +Indexes +FollowSymLinks +MultiViews \n          AllowOverride All \n          Require all granted \n          Order allow,deny \n          allow from all \n     </Directory>#' /etc/apache2/sites-enabled/000-default.conf
 
 # PHP 5 settings
 #mod mcrypt
