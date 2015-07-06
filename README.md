@@ -2,7 +2,7 @@
 
 ## AngularJS - Laravel - Vagrant 
 
-Bash shell provisioner for Vagrant box to install Larabas-AngularJS development environment.
+Bash shell provisioner for Vagrant box to install development environment cabable of installing and work with Laravel and AngularJS.
 
 # Environment
 
